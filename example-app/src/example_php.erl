@@ -4,7 +4,7 @@
 
 -export([start/1, start/2, stop/1]).
 
-start(PhpPath) ->
+start(Path) ->
   application:load(example_php),
   application:set_env(example_php, path, Path),
   application:start(cowboy),
