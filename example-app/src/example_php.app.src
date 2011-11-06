@@ -1,4 +1,4 @@
-{application, example_php,
+{application, php,
  [
   {description, ""},
   {vsn, "1"},
@@ -7,6 +7,6 @@
                   kernel,
                   stdlib
                  ]},
-  {mod, { example_php, []}},
+  {mod, { php, []}},
   {env, []}
  ]}.
