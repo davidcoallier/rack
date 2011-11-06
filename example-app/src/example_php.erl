@@ -19,7 +19,7 @@ start(_, _) ->
 		]}
 	],
 	cowboy:start_listener(http, 1,
-		cowboy_tcp_transport, [{port, 8080}],
+		cowboy_tcp_transport, [{port, 8001}],
 		cowboy_http_protocol, [{dispatch, Dispatch}]
 	).
 

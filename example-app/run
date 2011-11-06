@@ -5,6 +5,7 @@ main([PhpPath]) ->
   Root = filename:dirname(escript:script_name()),
   code:add_pathz(Root ++ "/ebin"),
   code:add_pathz(Root ++ "/../ebin"),
+  code:add_pathz(Root ++ "/src"),
   [code:add_pathz(Path) || Path <- filelib:wildcard(Root ++ "/deps/*/ebin")],
   [code:add_pathz(Path) || Path <- filelib:wildcard(Root ++ "/../../*/ebin")],
   example_php:start(PhpPath),

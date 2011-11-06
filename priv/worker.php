@@ -3,6 +3,7 @@
 
 chdir($argv[0]);
 
+file_put_contents(__DIR__ . '/php.log', stream_get_contents($argv));
 
 function read_request()
 {
